@@ -4,97 +4,134 @@
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
   </head>
 
   <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-  <header id="header">
-    <img id="logo" src="budget1.png">
-    <nav id="nav-bar">
-      <a class="nav-link" href="#">Trips</a>
-      <a class="nav-link" href="#">Pricing</a>
-      <a class="nav-link" href="index.html">Home</a>
-    </nav>
-  </header>
+    <div class="navigation-bar">
 
-  <section id="Newsletter">
-    <h3>Sign Up for our Newsletter</h3>
-    <form id="form">
-      <input
-      name = "Email Adress" placeholder="example@mail.com"
-      />
-      <button class="button">Subscribe!</button>
-    </form>
-  </section>
 
-  <section>
-    <div class="feature1">
-      <img id="feature1-icon" src="budget1.png">
-      <p>This is the first feature</p>
-    </div>
-    <div class="feature2">
-      <img id="feature1-icon" src="budget1.png">
-      <p>This is the second feature</p>
-    </div>
-    <div class="feature3">
-      <img id="feature1-icon" src="budget1.png">
-      <p>This is the third feature</p>
-    </div>
-  </section>
+      <div id="navigation-container">
+  
+        <img class="logo" src="budget1.png">
+  
+        <ul>
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#features">Features</a></li>
+          <li><a class="nav-link" href="#video">Youtube</a></li>
+          <li><a class="nav-link" href="#pricing">Pricing</a></li>
+          <li><a class="nav-link" href="#getintouch">Get in Touch</a></li>
+        </ul>
+      </div>
 
-  <section>
-    <div id="video">
-      <iframe width="999" height="562" src="https://www.youtube.com/embed/3iVOcG2x5YM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-  </section>
+      <form action="/action_page.php">
+        <div class="container">
+          <h2>Subscribe to our Newsletter</h2>
+          <p>Lorem ipsum text about why you should subscribe to our newsletter blabla. Lorem ipsum text about why you should subscribe to our newsletter blabla.</p>
+        </div>
+      
+        <div class="container" style="background-color:white">
+          <input type="text" placeholder="Name" name="name" required>
+          <input type="text" placeholder="Email address" name="mail" required>
+          <label>
+            <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+          </label>
+        </div>
+      
+        <div class="container">
+          <input type="submit" value="Subscribe">
+        </div>
+      </form>
 
-  <section id="Pricing">
-    <div class="product" id="cash">
-      <div class="level">brotherhood</div>
-      <h2>9k6600</h2>
-      <ol>
-        <li>Lorem ipsum.</li>
-        <li>Lorem ipsum.</li>
-        <li>Lorem ipsum dolor.</li>
-        <li>Lorem ipsum.</li>
-      </ol>
-      <button class="button">Select</button>
-    </div>
+      <section id="youtube">
+        <iframe
+          id="video"
+          height="315"
+          src="https://www.youtube.com/embed/fiTJneM4_8U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </section>
 
-    <div class="product" id="cash">
-      <div class="level">brotherhood</div>
-      <h2>9k6600</h2>
-      <ol>
-        <li>Lorem ipsum.</li>
-        <li>Lorem ipsum.</li>
-        <li>Lorem ipsum dolor.</li>
-        <li>Lorem ipsum.</li>
-      </ol>
-      <button class="button">Select</button>
-    </div>
+      <div class="container">
+        <section id="features">
+          <div class="grid">
+            <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
+            <div class="desc">
+              <h2>Premium Materials</h2>
+              <p>
+                Our trombones use the shiniest brass which is sourced locally. This
+                will increase the longevity of your purchase.
+              </p>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+            <div class="desc">
+              <h2>Fast Shipping</h2>
+              <p>
+                We make sure you recieve your trombone as soon as we have finished
+                making it. We also provide free returns if you are not satisfied.
+              </p>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="icon">
+              <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+            </div>
+            <div class="desc">
+              <h2>Quality Assurance</h2>
+              <p>
+                For every purchase you make, we will ensure there are no damages or
+                faults and we will check and test the pitch of your instrument.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="pricing">
+          <div class="product" id="cash">
+            <div class="level">brotherhood</div>
+            <h2>9k6600</h2>
+            <ol>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum dolor.</li>
+              <li>Lorem ipsum.</li>
+            </ol>
+            <button class="btn">Select</button>
+          </div>
+          <div class="product" id="bass">
+            <div class="level">Bass Trombone</div>
+            <h2>$900</h2>
+            <ol>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum dolor.</li>
+              <li>Lorem ipsum.</li>
+            </ol>
+            <button class="btn">Select</button>
+          </div>
+          <div class="product" id="valve">
+            <div class="level">Valve Trombone</div>
+            <h2>$1200</h2>
+            <ol>
+              <li>Plays similar to a Trumpet</li>
+              <li>Great for Jazz Bands</li>
+              <li>Lorem ipsum dolor.</li>
+              <li>Lorem ipsum.</li>
+            </ol>
+            <button class="btn">Select</button>
+          </div>
+        </section>
 
-    <div class="product" id="cash">
-      <div class="level">brotherhood</div>
-      <h2>9k6600</h2>
-      <ol>
-        <li>Lorem ipsum.</li>
-        <li>Lorem ipsum.</li>
-        <li>Lorem ipsum dolor.</li>
-        <li>Lorem ipsum.</li>
-      </ol>
-      <button class="button">Select</button>
-    </div>
-
-  </section>
-
-  <footer>
-    <nav id="nav-bar">
-      <a class="nav-link" href="#">Privacy</a>
-      <a class="nav-link" href="#">Terms</a>
-      <a class="nav-link" href="index.html">Back to homepage</a>
-    </nav> 
-    <p>Copyright 2021</p>
-  </footer>
+        <footer>
+          <p>Author: Misheck-Tord<br>
+          <a href="index.html">Back to home</a></p>
+        </footer>
+  </body>
     <script  src="js/index.js"></script>
   </body>
 </html>
